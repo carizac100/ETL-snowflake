@@ -1,5 +1,15 @@
 version: 2
 
+# Definición de las fuentes de datos externas (tablas de Snowflake)
+sources:
+  - name: JAFFLE_SHOP
+    database: RAW                # Asegura que sea la base de datos real en Snowflake
+    schema: JAFFLE_SHOP          # Asegura que sea el esquema correcto
+    tables:
+      - name: CUSTOMERS
+      - name: ORDERS
+
+# Definición de los modelos transformados por dbt
 models:
   - name: customers
     description: "Tabla transformada de clientes basada en jaffle_shop.customers."

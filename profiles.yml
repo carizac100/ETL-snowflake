@@ -1,11 +1,16 @@
+<<<<<<< HEAD:profiles.yml
 # Nombre del proyecto
+=======
+>>>>>>> 8a259a0 (Actualizando cambios en dbt):dbt_project.yml
 name: 'etl_project'
 version: '1.0.0'
-
-# Perfil de dbt, asegúrate de que coincida con ~/.dbt/profiles.yml
 profile: 'etl_project'
 
+<<<<<<< HEAD:profiles.yml
 # Configuración de rutas
+=======
+# Rutas de directorios en tu proyecto dbt
+>>>>>>> 8a259a0 (Actualizando cambios en dbt):dbt_project.yml
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -13,13 +18,13 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-# Directorios que se limpiarán con `dbt clean`
 clean-targets:
-  - "target"
-  - "dbt_packages"
+  - 'target'
+  - 'dbt_packages'
 
-# Configuración de modelos en dbt
+# Configuración de modelos
 models:
+<<<<<<< HEAD:profiles.yml
   jaffle_shop:
     +schema: "{{ target.schema }}"  # Usa el esquema según el entorno (DEV, QA, PROD)
     
@@ -32,3 +37,11 @@ models:
 
     customers:
       +unique_key: "customer_id"
+=======
+  etl_project:
+    +materialized: table
+
+    # Ejemplo: configuración específica para el modelo "customers"
+    customers:
+      +materialized: table
+>>>>>>> 8a259a0 (Actualizando cambios en dbt):dbt_project.yml

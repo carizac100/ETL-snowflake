@@ -1799,3 +1799,941 @@ Compilation Error
 [0m02:23:39.757136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7fea15c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7fd001d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7fc0a2180>]}
 [0m02:23:39.758893 [debug] [MainThread]: Flushing usage events
 [0m02:23:40.181436 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:25:29.993504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a64c67fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a65edf920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a64c65c40>]}
+
+
+============================== 02:25:30.005925 | 34a81e1c-9638-4fcd-85d8-3d168e8f99cc ==============================
+[0m02:25:30.005925 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:25:30.008023 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'profiles_dir': '/home/carizac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m02:25:30.318997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34a81e1c-9638-4fcd-85d8-3d168e8f99cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a64e0f530>]}
+[0m02:25:30.336029 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.48379275, "process_in_blocks": "0", "process_kernel_time": 0.350412, "process_mem_max_rss": "89476", "process_out_blocks": "0", "process_user_time": 3.764434}
+[0m02:25:30.338450 [debug] [MainThread]: Command `dbt clean` succeeded at 02:25:30.337856 after 0.49 seconds
+[0m02:25:30.340057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a67d2b080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a64e7c2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a6539d880>]}
+[0m02:25:30.341497 [debug] [MainThread]: Flushing usage events
+[0m02:25:30.786462 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:25:35.934672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d65c43b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d45a5790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d52e56a0>]}
+
+
+============================== 02:25:35.947060 | 15a5ec61-fbfd-4ff9-8149-3c8649cdc94f ==============================
+[0m02:25:35.947060 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:25:35.949108 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m02:25:36.324549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '15a5ec61-fbfd-4ff9-8149-3c8649cdc94f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d43c66c0>]}
+[0m02:25:36.365076 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:25:36.368490 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:25:36.371284 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.7883049, "process_in_blocks": "8", "process_kernel_time": 0.471974, "process_mem_max_rss": "89764", "process_out_blocks": "16", "process_user_time": 4.639413}
+[0m02:25:36.372734 [debug] [MainThread]: Command `dbt deps` succeeded at 02:25:36.372371 after 0.79 seconds
+[0m02:25:36.373595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d65c43b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d4199a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60d4170260>]}
+[0m02:25:36.374555 [debug] [MainThread]: Flushing usage events
+[0m02:25:36.761950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:25:41.740712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0929358e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0929bd72f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f092ae7b800>]}
+
+
+============================== 02:25:41.751565 | 18b264ef-d800-4cb2-bfc0-fd88e8f8399b ==============================
+[0m02:25:41.751565 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:25:41.754045 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'profiles_dir': '/home/carizac/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m02:25:41.780584 [info ] [MainThread]: dbt version: 1.9.3
+[0m02:25:41.782255 [info ] [MainThread]: python version: 3.12.3
+[0m02:25:41.783444 [info ] [MainThread]: python path: /home/carizac/dbt-env/bin/python3
+[0m02:25:41.784599 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m02:25:42.482561 [info ] [MainThread]: Using profiles dir at /home/carizac/.dbt
+[0m02:25:42.484838 [info ] [MainThread]: Using profiles.yml file at /home/carizac/.dbt/profiles.yml
+[0m02:25:42.486908 [info ] [MainThread]: Using dbt_project.yml file at /home/carizac/ETL-snowflake/etl_project/dbt_project.yml
+[0m02:25:42.490666 [info ] [MainThread]: adapter type: snowflake
+[0m02:25:42.492143 [info ] [MainThread]: adapter version: 1.9.2
+[0m02:25:42.822161 [info ] [MainThread]: Configuration:
+[0m02:25:42.823073 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:25:42.824632 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:25:42.826280 [info ] [MainThread]: Required dependencies:
+[0m02:25:42.827872 [debug] [MainThread]: Executing "git --help"
+[0m02:25:42.832846 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:25:42.834447 [debug] [MainThread]: STDERR: "b''"
+[0m02:25:42.835990 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:25:42.837943 [info ] [MainThread]: Connection:
+[0m02:25:42.840614 [info ] [MainThread]:   account: oh25185.mexico-central.azure
+[0m02:25:42.842899 [info ] [MainThread]:   user: PC_DBT_USER
+[0m02:25:42.844427 [info ] [MainThread]:   database: PC_DBT_DB
+[0m02:25:42.845704 [info ] [MainThread]:   warehouse: PC_DBT_WH
+[0m02:25:42.846825 [info ] [MainThread]:   role: PC_DBT_ROLE
+[0m02:25:42.847825 [info ] [MainThread]:   schema: DBT_CCARVAJAL
+[0m02:25:42.849044 [info ] [MainThread]:   authenticator: None
+[0m02:25:42.850408 [info ] [MainThread]:   oauth_client_id: None
+[0m02:25:42.852149 [info ] [MainThread]:   query_tag: None
+[0m02:25:42.853857 [info ] [MainThread]:   client_session_keep_alive: False
+[0m02:25:42.856213 [info ] [MainThread]:   host: None
+[0m02:25:42.857853 [info ] [MainThread]:   port: None
+[0m02:25:42.859272 [info ] [MainThread]:   proxy_host: None
+[0m02:25:42.860659 [info ] [MainThread]:   proxy_port: None
+[0m02:25:42.861954 [info ] [MainThread]:   protocol: None
+[0m02:25:42.862960 [info ] [MainThread]:   connect_retries: 1
+[0m02:25:42.864255 [info ] [MainThread]:   connect_timeout: None
+[0m02:25:42.865271 [info ] [MainThread]:   retry_on_database_errors: False
+[0m02:25:42.866335 [info ] [MainThread]:   retry_all: False
+[0m02:25:42.867238 [info ] [MainThread]:   insecure_mode: False
+[0m02:25:42.868848 [info ] [MainThread]:   reuse_connections: True
+[0m02:25:42.871484 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:25:43.071367 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m02:25:43.171457 [debug] [MainThread]: Using snowflake connection "debug"
+[0m02:25:43.173499 [debug] [MainThread]: On debug: select 1 as id
+[0m02:25:43.175852 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:25:43.896631 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.721 seconds
+[0m02:25:43.900044 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m02:25:43.901442 [info ] [MainThread]: [32mAll checks passed![0m
+[0m02:25:43.905272 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.4330454, "process_in_blocks": "0", "process_kernel_time": 0.639497, "process_mem_max_rss": "118416", "process_out_blocks": "32", "process_user_time": 5.305828}
+[0m02:25:43.907819 [debug] [MainThread]: Command `dbt debug` succeeded at 02:25:43.907234 after 2.44 seconds
+[0m02:25:43.909912 [debug] [MainThread]: Connection 'debug' was left open.
+[0m02:25:43.911311 [debug] [MainThread]: On debug: Close
+[0m02:25:44.163313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0929e06480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0929e07980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0928048770>]}
+[0m02:25:44.166306 [debug] [MainThread]: Flushing usage events
+[0m02:25:44.590081 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:25:49.007874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e0029f8f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfee85c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfeb12660>]}
+
+
+============================== 02:25:49.020332 | 6e6da53d-8816-4063-a281-594adcbfdb04 ==============================
+[0m02:25:49.020332 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:25:49.022365 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'version_check': 'True', 'profiles_dir': '/home/carizac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m02:25:49.842902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6e6da53d-8816-4063-a281-594adcbfdb04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfcf891f0>]}
+[0m02:25:49.970823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6e6da53d-8816-4063-a281-594adcbfdb04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfcf51bb0>]}
+[0m02:25:49.971959 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:25:50.174153 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m02:25:50.176425 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:25:50.178583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6e6da53d-8816-4063-a281-594adcbfdb04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfd4afd40>]}
+[0m02:25:53.366403 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etl_project.customers' (models/customers.sql) depends on a source named 'JAFFLE_SHOP.ORDERS' which was not found
+[0m02:25:53.367784 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 4.603951, "process_in_blocks": "0", "process_kernel_time": 0.491747, "process_mem_max_rss": "117156", "process_out_blocks": "8", "process_user_time": 7.526755}
+[0m02:25:53.368365 [debug] [MainThread]: Command `dbt build` failed at 02:25:53.368245 after 4.60 seconds
+[0m02:25:53.368829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfec62570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfce16000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dfceb3830>]}
+[0m02:25:53.369250 [debug] [MainThread]: Flushing usage events
+[0m02:25:53.750183 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:33:13.394399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf86243b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf86955e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf6d277d0>]}
+
+
+============================== 02:33:13.404966 | acc0e45d-d2b7-4b52-87ff-b91f67d6076e ==============================
+[0m02:33:13.404966 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:33:13.406558 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'profiles_dir': '/home/carizac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m02:33:13.695566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'acc0e45d-d2b7-4b52-87ff-b91f67d6076e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf89ccad0>]}
+[0m02:33:13.712970 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.47107902, "process_in_blocks": "0", "process_kernel_time": 0.300856, "process_mem_max_rss": "89604", "process_out_blocks": "8", "process_user_time": 2.527197}
+[0m02:33:13.714068 [debug] [MainThread]: Command `dbt clean` succeeded at 02:33:13.713851 after 0.47 seconds
+[0m02:33:13.714724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf86243b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf8c62300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf6beb4d0>]}
+[0m02:33:13.715363 [debug] [MainThread]: Flushing usage events
+[0m02:33:14.100518 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:33:17.154904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ae2c9a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ae631430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ae2cac90>]}
+
+
+============================== 02:33:17.164330 | fdbd22d4-43ad-4265-9e49-7346a1ee343f ==============================
+[0m02:33:17.164330 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:33:17.166440 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m02:33:17.445554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fdbd22d4-43ad-4265-9e49-7346a1ee343f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ae897ad0>]}
+[0m02:33:17.463635 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:33:17.465940 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:33:17.467849 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.45215467, "process_in_blocks": "8", "process_kernel_time": 0.372153, "process_mem_max_rss": "89872", "process_out_blocks": "0", "process_user_time": 2.564842}
+[0m02:33:17.468638 [debug] [MainThread]: Command `dbt deps` succeeded at 02:33:17.468468 after 0.45 seconds
+[0m02:33:17.469322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8addbbe90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8ae2cb9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8afdcb8c0>]}
+[0m02:33:17.469942 [debug] [MainThread]: Flushing usage events
+[0m02:33:17.855203 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:33:20.824048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31d714b980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31d7673530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31d7149b80>]}
+
+
+============================== 02:33:20.833431 | 86a7dc14-6aee-4be6-b7b7-08deffed8ff1 ==============================
+[0m02:33:20.833431 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:33:20.835460 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m02:33:20.862645 [info ] [MainThread]: dbt version: 1.9.3
+[0m02:33:20.864500 [info ] [MainThread]: python version: 3.12.3
+[0m02:33:20.865587 [info ] [MainThread]: python path: /home/carizac/dbt-env/bin/python3
+[0m02:33:20.866719 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m02:33:21.303581 [info ] [MainThread]: Using profiles dir at /home/carizac/.dbt
+[0m02:33:21.304331 [info ] [MainThread]: Using profiles.yml file at /home/carizac/.dbt/profiles.yml
+[0m02:33:21.305106 [info ] [MainThread]: Using dbt_project.yml file at /home/carizac/ETL-snowflake/etl_project/dbt_project.yml
+[0m02:33:21.306286 [info ] [MainThread]: adapter type: snowflake
+[0m02:33:21.306902 [info ] [MainThread]: adapter version: 1.9.2
+[0m02:33:21.523518 [info ] [MainThread]: Configuration:
+[0m02:33:21.524438 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:33:21.525184 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:33:21.525918 [info ] [MainThread]: Required dependencies:
+[0m02:33:21.526631 [debug] [MainThread]: Executing "git --help"
+[0m02:33:21.532287 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:33:21.533052 [debug] [MainThread]: STDERR: "b''"
+[0m02:33:21.533957 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:33:21.534703 [info ] [MainThread]: Connection:
+[0m02:33:21.535459 [info ] [MainThread]:   account: oh25185.mexico-central.azure
+[0m02:33:21.536296 [info ] [MainThread]:   user: PC_DBT_USER
+[0m02:33:21.536960 [info ] [MainThread]:   database: PC_DBT_DB
+[0m02:33:21.537655 [info ] [MainThread]:   warehouse: PC_DBT_WH
+[0m02:33:21.538314 [info ] [MainThread]:   role: PC_DBT_ROLE
+[0m02:33:21.538969 [info ] [MainThread]:   schema: DBT_CCARVAJAL
+[0m02:33:21.539693 [info ] [MainThread]:   authenticator: None
+[0m02:33:21.540403 [info ] [MainThread]:   oauth_client_id: None
+[0m02:33:21.541312 [info ] [MainThread]:   query_tag: None
+[0m02:33:21.542083 [info ] [MainThread]:   client_session_keep_alive: False
+[0m02:33:21.542772 [info ] [MainThread]:   host: None
+[0m02:33:21.543452 [info ] [MainThread]:   port: None
+[0m02:33:21.544292 [info ] [MainThread]:   proxy_host: None
+[0m02:33:21.545048 [info ] [MainThread]:   proxy_port: None
+[0m02:33:21.545918 [info ] [MainThread]:   protocol: None
+[0m02:33:21.546628 [info ] [MainThread]:   connect_retries: 1
+[0m02:33:21.547310 [info ] [MainThread]:   connect_timeout: None
+[0m02:33:21.548027 [info ] [MainThread]:   retry_on_database_errors: False
+[0m02:33:21.548828 [info ] [MainThread]:   retry_all: False
+[0m02:33:21.550089 [info ] [MainThread]:   insecure_mode: False
+[0m02:33:21.550975 [info ] [MainThread]:   reuse_connections: True
+[0m02:33:21.552052 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:33:21.732863 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m02:33:21.767759 [debug] [MainThread]: Using snowflake connection "debug"
+[0m02:33:21.768288 [debug] [MainThread]: On debug: select 1 as id
+[0m02:33:21.768653 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:33:22.596001 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.827 seconds
+[0m02:33:22.598884 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m02:33:22.600269 [info ] [MainThread]: [32mAll checks passed![0m
+[0m02:33:22.602953 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.8890307, "process_in_blocks": "0", "process_kernel_time": 0.371722, "process_mem_max_rss": "118608", "process_out_blocks": "32", "process_user_time": 3.285226}
+[0m02:33:22.604506 [debug] [MainThread]: Command `dbt debug` succeeded at 02:33:22.604117 after 1.89 seconds
+[0m02:33:22.605556 [debug] [MainThread]: Connection 'debug' was left open.
+[0m02:33:22.606671 [debug] [MainThread]: On debug: Close
+[0m02:33:22.829858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31d75e0260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31d5e79370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f31d7235580>]}
+[0m02:33:22.831221 [debug] [MainThread]: Flushing usage events
+[0m02:33:23.221119 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:33:26.736661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96542d5970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9655704d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9654a8f050>]}
+
+
+============================== 02:33:26.741244 | 91077dd4-403c-4326-9d05-d9cd1ea42aca ==============================
+[0m02:33:26.741244 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:33:26.742052 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'profiles_dir': '/home/carizac/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt build', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:33:27.407612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9653837020>]}
+[0m02:33:27.554798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96527dc470>]}
+[0m02:33:27.556032 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:33:27.745591 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m02:33:27.746628 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:33:27.747217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9652673500>]}
+[0m02:33:30.451100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9652496e70>]}
+[0m02:33:30.664940 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:33:30.671563 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:33:30.763158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9652200ef0>]}
+[0m02:33:30.764576 [info ] [MainThread]: Found 1 model, 2 data tests, 5 sources, 474 macros
+[0m02:33:30.772718 [info ] [MainThread]: 
+[0m02:33:30.774603 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:33:30.775987 [info ] [MainThread]: 
+[0m02:33:30.778485 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:33:30.781963 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB'
+[0m02:33:30.872789 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB"
+[0m02:33:30.873687 [debug] [ThreadPool]: On list_PC_DBT_DB: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB"} */
+show terse schemas in database PC_DBT_DB
+    limit 10000
+[0m02:33:30.874342 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:33:31.701782 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.827 seconds
+[0m02:33:31.708702 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_PC_DBT_DB, now list_PC_DBT_DB_DBT_CCARVAJAL)
+[0m02:33:31.739359 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_DBT_CCARVAJAL"
+[0m02:33:31.740599 [debug] [ThreadPool]: On list_PC_DBT_DB_DBT_CCARVAJAL: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB_DBT_CCARVAJAL"} */
+show objects in PC_DBT_DB.DBT_CCARVAJAL limit 10000;
+[0m02:33:31.909268 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.168 seconds
+[0m02:33:31.916247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96522012b0>]}
+[0m02:33:31.926101 [debug] [Thread-1 (]: Began running node model.etl_project.customers
+[0m02:33:31.927770 [info ] [Thread-1 (]: 1 of 3 START sql table model DBT_CCARVAJAL.customers ........................... [RUN]
+[0m02:33:31.929191 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_PC_DBT_DB_DBT_CCARVAJAL, now model.etl_project.customers)
+[0m02:33:31.930525 [debug] [Thread-1 (]: Began compiling node model.etl_project.customers
+[0m02:33:31.957585 [debug] [Thread-1 (]: Writing injected SQL for node "model.etl_project.customers"
+[0m02:33:31.962904 [debug] [Thread-1 (]: Began executing node model.etl_project.customers
+[0m02:33:32.058622 [debug] [Thread-1 (]: Writing runtime sql for node "model.etl_project.customers"
+[0m02:33:32.068141 [debug] [Thread-1 (]: Using snowflake connection "model.etl_project.customers"
+[0m02:33:32.069726 [debug] [Thread-1 (]: On model.etl_project.customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "node_id": "model.etl_project.customers"} */
+create or replace transient table PC_DBT_DB.DBT_CCARVAJAL.customers
+         as
+        (
+
+with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS
+),
+
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from PC_DBT_DB.DBT_CCARVAJAL.ORDERS
+),
+
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+),
+
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final
+        );
+[0m02:33:32.225033 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bae345-0004-c777-0000-00000af992ad
+[0m02:33:32.226469 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+[0m02:33:32.236030 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:33:32.241643 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '91077dd4-403c-4326-9d05-d9cd1ea42aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96543046e0>]}
+[0m02:33:32.244094 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model DBT_CCARVAJAL.customers .................. [[31mERROR[0m in 0.31s]
+[0m02:33:32.246247 [debug] [Thread-1 (]: Finished running node model.etl_project.customers
+[0m02:33:32.248694 [debug] [Thread-4 (]: Marking all children of 'model.etl_project.customers' to be skipped because of status 'error'.  Reason: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql.
+[0m02:33:32.252901 [debug] [Thread-1 (]: Began running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:33:32.254313 [info ] [Thread-1 (]: 2 of 3 SKIP test not_null_customers_customer_id ................................ [[33mSKIP[0m]
+[0m02:33:32.255937 [debug] [Thread-1 (]: Finished running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:33:32.257440 [debug] [Thread-1 (]: Began running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:33:32.258576 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.not_null_customers_customer_id.5c9bf9911d' to be skipped because of status 'skipped'. 
+[0m02:33:32.259918 [info ] [Thread-1 (]: 3 of 3 SKIP test unique_customers_customer_id .................................. [[33mSKIP[0m]
+[0m02:33:32.262191 [debug] [Thread-1 (]: Finished running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:33:32.263372 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.unique_customers_customer_id.c5af1ff4b1' to be skipped because of status 'skipped'. 
+[0m02:33:32.268566 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:33:32.269753 [debug] [MainThread]: Connection 'model.etl_project.customers' was left open.
+[0m02:33:32.270697 [debug] [MainThread]: On model.etl_project.customers: Close
+[0m02:33:32.493053 [info ] [MainThread]: 
+[0m02:33:32.494751 [info ] [MainThread]: Finished running 1 table model, 2 data tests in 0 hours 0 minutes and 1.72 seconds (1.72s).
+[0m02:33:32.497881 [debug] [MainThread]: Command end result
+[0m02:33:32.559096 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:33:32.562449 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:33:32.574531 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/carizac/ETL-snowflake/etl_project/target/run_results.json
+[0m02:33:32.575302 [info ] [MainThread]: 
+[0m02:33:32.576220 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:33:32.577448 [info ] [MainThread]: 
+[0m02:33:32.578449 [error] [MainThread]:   Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:33:32.579288 [info ] [MainThread]: 
+[0m02:33:32.580182 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m02:33:32.582659 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 6.0358443, "process_in_blocks": "3520", "process_kernel_time": 0.400619, "process_mem_max_rss": "132456", "process_out_blocks": "2992", "process_user_time": 7.301286}
+[0m02:33:32.583751 [debug] [MainThread]: Command `dbt build` failed at 02:33:32.583521 after 6.04 seconds
+[0m02:33:32.584475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9654a8f050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f965700b440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9650145550>]}
+[0m02:33:32.585108 [debug] [MainThread]: Flushing usage events
+[0m02:33:32.964879 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:39:20.069941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa68fc89c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa690068e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa690558800>]}
+
+
+============================== 02:39:20.084118 | 48a3d7ba-4231-45d4-bcaf-456cacfe7395 ==============================
+[0m02:39:20.084118 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:39:20.087793 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt clean', 'send_anonymous_usage_stats': 'True'}
+[0m02:39:20.408509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48a3d7ba-4231-45d4-bcaf-456cacfe7395', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6918dcc50>]}
+[0m02:39:20.487577 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.65012527, "process_in_blocks": "44576", "process_kernel_time": 0.863768, "process_mem_max_rss": "89528", "process_out_blocks": "8", "process_user_time": 4.389149}
+[0m02:39:20.489540 [debug] [MainThread]: Command `dbt clean` succeeded at 02:39:20.488971 after 0.65 seconds
+[0m02:39:20.491281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa68ff1cef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6901e6f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa68fc67d70>]}
+[0m02:39:20.492971 [debug] [MainThread]: Flushing usage events
+[0m02:39:21.010919 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:39:25.329187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa0ae5eff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa0be305c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa0abd10a0>]}
+
+
+============================== 02:39:25.339482 | 7041f7c3-fbc7-4ab5-a0ad-d73c68bc127a ==============================
+[0m02:39:25.339482 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:39:25.341409 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/carizac/.dbt', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:39:25.637249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7041f7c3-fbc7-4ab5-a0ad-d73c68bc127a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa09e66a80>]}
+[0m02:39:25.676325 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:39:25.679759 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:39:25.684973 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.6085804, "process_in_blocks": "192", "process_kernel_time": 0.420151, "process_mem_max_rss": "89680", "process_out_blocks": "0", "process_user_time": 3.741349}
+[0m02:39:25.686649 [debug] [MainThread]: Command `dbt deps` succeeded at 02:39:25.686201 after 0.61 seconds
+[0m02:39:25.688432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa0a8295b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa09f7e1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa09fb7e00>]}
+[0m02:39:25.691240 [debug] [MainThread]: Flushing usage events
+[0m02:39:26.079041 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:39:30.250642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f726553ac60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7265cd6570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f726553ba40>]}
+
+
+============================== 02:39:30.257298 | 4f51cbb0-1dba-4558-a8ea-bbe4b8541bdb ==============================
+[0m02:39:30.257298 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:39:30.258504 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'profiles_dir': '/home/carizac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:39:30.273358 [info ] [MainThread]: dbt version: 1.9.3
+[0m02:39:30.273968 [info ] [MainThread]: python version: 3.12.3
+[0m02:39:30.274498 [info ] [MainThread]: python path: /home/carizac/dbt-env/bin/python3
+[0m02:39:30.275348 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m02:39:31.147526 [info ] [MainThread]: Using profiles dir at /home/carizac/.dbt
+[0m02:39:31.150069 [info ] [MainThread]: Using profiles.yml file at /home/carizac/.dbt/profiles.yml
+[0m02:39:31.151923 [info ] [MainThread]: Using dbt_project.yml file at /home/carizac/ETL-snowflake/etl_project/dbt_project.yml
+[0m02:39:31.155412 [info ] [MainThread]: adapter type: snowflake
+[0m02:39:31.157110 [info ] [MainThread]: adapter version: 1.9.2
+[0m02:39:31.389676 [info ] [MainThread]: Configuration:
+[0m02:39:31.391324 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:39:31.392563 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:39:31.393750 [info ] [MainThread]: Required dependencies:
+[0m02:39:31.395201 [debug] [MainThread]: Executing "git --help"
+[0m02:39:31.400844 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:39:31.402035 [debug] [MainThread]: STDERR: "b''"
+[0m02:39:31.403333 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:39:31.405206 [info ] [MainThread]: Connection:
+[0m02:39:31.406187 [info ] [MainThread]:   account: oh25185.mexico-central.azure
+[0m02:39:31.406879 [info ] [MainThread]:   user: PC_DBT_USER
+[0m02:39:31.407537 [info ] [MainThread]:   database: PC_DBT_DB
+[0m02:39:31.408155 [info ] [MainThread]:   warehouse: PC_DBT_WH
+[0m02:39:31.408773 [info ] [MainThread]:   role: PC_DBT_ROLE
+[0m02:39:31.409417 [info ] [MainThread]:   schema: DBT_CCARVAJAL
+[0m02:39:31.409954 [info ] [MainThread]:   authenticator: None
+[0m02:39:31.410425 [info ] [MainThread]:   oauth_client_id: None
+[0m02:39:31.410912 [info ] [MainThread]:   query_tag: None
+[0m02:39:31.411445 [info ] [MainThread]:   client_session_keep_alive: False
+[0m02:39:31.411949 [info ] [MainThread]:   host: None
+[0m02:39:31.412529 [info ] [MainThread]:   port: None
+[0m02:39:31.413137 [info ] [MainThread]:   proxy_host: None
+[0m02:39:31.413781 [info ] [MainThread]:   proxy_port: None
+[0m02:39:31.414388 [info ] [MainThread]:   protocol: None
+[0m02:39:31.415121 [info ] [MainThread]:   connect_retries: 1
+[0m02:39:31.416010 [info ] [MainThread]:   connect_timeout: None
+[0m02:39:31.416741 [info ] [MainThread]:   retry_on_database_errors: False
+[0m02:39:31.417371 [info ] [MainThread]:   retry_all: False
+[0m02:39:31.417922 [info ] [MainThread]:   insecure_mode: False
+[0m02:39:31.418426 [info ] [MainThread]:   reuse_connections: True
+[0m02:39:31.419079 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:39:31.608854 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m02:39:31.669934 [debug] [MainThread]: Using snowflake connection "debug"
+[0m02:39:31.671777 [debug] [MainThread]: On debug: select 1 as id
+[0m02:39:31.673360 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:39:32.575516 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.902 seconds
+[0m02:39:32.578396 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m02:39:32.579975 [info ] [MainThread]: [32mAll checks passed![0m
+[0m02:39:32.582046 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.550187, "process_in_blocks": "29592", "process_kernel_time": 0.537819, "process_mem_max_rss": "118396", "process_out_blocks": "32", "process_user_time": 4.432034}
+[0m02:39:32.582995 [debug] [MainThread]: Command `dbt debug` succeeded at 02:39:32.582796 after 2.55 seconds
+[0m02:39:32.583753 [debug] [MainThread]: Connection 'debug' was left open.
+[0m02:39:32.584548 [debug] [MainThread]: On debug: Close
+[0m02:39:32.809389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7265cd6570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7264546300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f726619bd10>]}
+[0m02:39:32.810969 [debug] [MainThread]: Flushing usage events
+[0m02:39:33.188909 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:39:36.894119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691b949580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691d6d24b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691b94a420>]}
+
+
+============================== 02:39:36.905244 | edff88de-5d7e-4beb-a42c-0e65c7cbcde7 ==============================
+[0m02:39:36.905244 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:39:36.907934 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt build', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:39:37.902274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691bd70260>]}
+[0m02:39:38.085975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691a748410>]}
+[0m02:39:38.088000 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:39:38.276430 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m02:39:38.278329 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:39:38.279663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691a60fc50>]}
+[0m02:39:42.428019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691a251460>]}
+[0m02:39:42.708813 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:39:42.716510 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:39:42.809836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6918fb8500>]}
+[0m02:39:42.811358 [info ] [MainThread]: Found 1 model, 2 data tests, 5 sources, 474 macros
+[0m02:39:42.818998 [info ] [MainThread]: 
+[0m02:39:42.820843 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:39:42.822682 [info ] [MainThread]: 
+[0m02:39:42.825089 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:39:42.829257 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB'
+[0m02:39:42.940111 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB"
+[0m02:39:42.941679 [debug] [ThreadPool]: On list_PC_DBT_DB: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB"} */
+show terse schemas in database PC_DBT_DB
+    limit 10000
+[0m02:39:42.943047 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:39:43.724881 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.782 seconds
+[0m02:39:43.731874 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_PC_DBT_DB, now list_PC_DBT_DB_DBT_CCARVAJAL)
+[0m02:39:43.765368 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_DBT_CCARVAJAL"
+[0m02:39:43.766726 [debug] [ThreadPool]: On list_PC_DBT_DB_DBT_CCARVAJAL: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB_DBT_CCARVAJAL"} */
+show objects in PC_DBT_DB.DBT_CCARVAJAL limit 10000;
+[0m02:39:43.938692 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.171 seconds
+[0m02:39:43.946554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691c599970>]}
+[0m02:39:43.963274 [debug] [Thread-1 (]: Began running node model.etl_project.customers
+[0m02:39:43.965502 [info ] [Thread-1 (]: 1 of 3 START sql table model DBT_CCARVAJAL.customers ........................... [RUN]
+[0m02:39:43.967186 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_PC_DBT_DB_DBT_CCARVAJAL, now model.etl_project.customers)
+[0m02:39:43.968587 [debug] [Thread-1 (]: Began compiling node model.etl_project.customers
+[0m02:39:43.997847 [debug] [Thread-1 (]: Writing injected SQL for node "model.etl_project.customers"
+[0m02:39:44.006917 [debug] [Thread-1 (]: Began executing node model.etl_project.customers
+[0m02:39:44.137724 [debug] [Thread-1 (]: Writing runtime sql for node "model.etl_project.customers"
+[0m02:39:44.154910 [debug] [Thread-1 (]: Using snowflake connection "model.etl_project.customers"
+[0m02:39:44.157363 [debug] [Thread-1 (]: On model.etl_project.customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "node_id": "model.etl_project.customers"} */
+create or replace transient table PC_DBT_DB.DBT_CCARVAJAL.customers
+         as
+        (
+
+with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS
+),
+
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from PC_DBT_DB.DBT_CCARVAJAL.ORDERS
+),
+
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+),
+
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final
+        );
+[0m02:39:44.344424 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bae34b-0004-c780-0000-00000af982cd
+[0m02:39:44.346437 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+[0m02:39:44.361334 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:39:44.369273 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'edff88de-5d7e-4beb-a42c-0e65c7cbcde7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69180a6300>]}
+[0m02:39:44.371717 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model DBT_CCARVAJAL.customers .................. [[31mERROR[0m in 0.40s]
+[0m02:39:44.374835 [debug] [Thread-1 (]: Finished running node model.etl_project.customers
+[0m02:39:44.376752 [debug] [Thread-4 (]: Marking all children of 'model.etl_project.customers' to be skipped because of status 'error'.  Reason: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql.
+[0m02:39:44.382089 [debug] [Thread-1 (]: Began running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:39:44.384305 [info ] [Thread-1 (]: 2 of 3 SKIP test not_null_customers_customer_id ................................ [[33mSKIP[0m]
+[0m02:39:44.386467 [debug] [Thread-1 (]: Finished running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:39:44.388063 [debug] [Thread-1 (]: Began running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:39:44.389711 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.not_null_customers_customer_id.5c9bf9911d' to be skipped because of status 'skipped'. 
+[0m02:39:44.391076 [info ] [Thread-1 (]: 3 of 3 SKIP test unique_customers_customer_id .................................. [[33mSKIP[0m]
+[0m02:39:44.393294 [debug] [Thread-1 (]: Finished running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:39:44.394708 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.unique_customers_customer_id.c5af1ff4b1' to be skipped because of status 'skipped'. 
+[0m02:39:44.400007 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:39:44.401727 [debug] [MainThread]: Connection 'model.etl_project.customers' was left open.
+[0m02:39:44.403399 [debug] [MainThread]: On model.etl_project.customers: Close
+[0m02:39:44.634094 [info ] [MainThread]: 
+[0m02:39:44.635859 [info ] [MainThread]: Finished running 1 table model, 2 data tests in 0 hours 0 minutes and 1.81 seconds (1.81s).
+[0m02:39:44.638676 [debug] [MainThread]: Command end result
+[0m02:39:44.726132 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:39:44.732900 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:39:44.747108 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/carizac/ETL-snowflake/etl_project/target/run_results.json
+[0m02:39:44.748179 [info ] [MainThread]: 
+[0m02:39:44.749522 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:39:44.750627 [info ] [MainThread]: 
+[0m02:39:44.752149 [error] [MainThread]:   Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:39:44.753033 [info ] [MainThread]: 
+[0m02:39:44.753940 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m02:39:44.757286 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 8.134916, "process_in_blocks": "5456", "process_kernel_time": 0.701053, "process_mem_max_rss": "133432", "process_out_blocks": "2992", "process_user_time": 9.033581}
+[0m02:39:44.758811 [debug] [MainThread]: Command `dbt build` failed at 02:39:44.758418 after 8.14 seconds
+[0m02:39:44.761306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691d67fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691a24dee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f691be70b60>]}
+[0m02:39:44.763089 [debug] [MainThread]: Flushing usage events
+[0m02:39:45.167724 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:40:50.117527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefdb62420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefedfaa80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefdb630e0>]}
+
+
+============================== 02:40:50.127136 | b9d83e4b-2392-42ec-b6d2-cd41c93182dd ==============================
+[0m02:40:50.127136 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:40:50.129286 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:40:50.436081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b9d83e4b-2392-42ec-b6d2-cd41c93182dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefe152db0>]}
+[0m02:40:50.472938 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.59599894, "process_in_blocks": "0", "process_kernel_time": 0.321774, "process_mem_max_rss": "89572", "process_out_blocks": "16", "process_user_time": 3.599852}
+[0m02:40:50.474797 [debug] [MainThread]: Command `dbt clean` succeeded at 02:40:50.474427 after 0.60 seconds
+[0m02:40:50.476069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefe2fce30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefe7b2d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbefdefaed0>]}
+[0m02:40:50.477309 [debug] [MainThread]: Flushing usage events
+[0m02:40:50.968614 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:40:54.831238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7255bc2d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7255dbecc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f72559532f0>]}
+
+
+============================== 02:40:54.839368 | 6359efe5-1f9b-488a-8b66-202b211ddc56 ==============================
+[0m02:40:54.839368 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:40:54.841488 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:40:55.138525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6359efe5-1f9b-488a-8b66-202b211ddc56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7255af6f30>]}
+[0m02:40:55.156507 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:40:55.158270 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:40:55.160150 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.45399413, "process_in_blocks": "0", "process_kernel_time": 0.300433, "process_mem_max_rss": "90072", "process_out_blocks": "0", "process_user_time": 3.344827}
+[0m02:40:55.161077 [debug] [MainThread]: Command `dbt deps` succeeded at 02:40:55.160883 after 0.46 seconds
+[0m02:40:55.161791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7258ecb440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7258cb21b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7255c2d430>]}
+[0m02:40:55.162579 [debug] [MainThread]: Flushing usage events
+[0m02:40:55.553246 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:40:59.242637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7c7499dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7c7cf0260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7c893f770>]}
+
+
+============================== 02:40:59.251601 | fbd8d731-6e34-476d-a3a5-ae3bddf0bb2d ==============================
+[0m02:40:59.251601 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:40:59.254649 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:40:59.277705 [info ] [MainThread]: dbt version: 1.9.3
+[0m02:40:59.279104 [info ] [MainThread]: python version: 3.12.3
+[0m02:40:59.280624 [info ] [MainThread]: python path: /home/carizac/dbt-env/bin/python3
+[0m02:40:59.282220 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m02:40:59.735201 [info ] [MainThread]: Using profiles dir at /home/carizac/.dbt
+[0m02:40:59.735889 [info ] [MainThread]: Using profiles.yml file at /home/carizac/.dbt/profiles.yml
+[0m02:40:59.736502 [info ] [MainThread]: Using dbt_project.yml file at /home/carizac/ETL-snowflake/etl_project/dbt_project.yml
+[0m02:40:59.737553 [info ] [MainThread]: adapter type: snowflake
+[0m02:40:59.738147 [info ] [MainThread]: adapter version: 1.9.2
+[0m02:40:59.858659 [info ] [MainThread]: Configuration:
+[0m02:40:59.859318 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:40:59.859916 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:40:59.860563 [info ] [MainThread]: Required dependencies:
+[0m02:40:59.861164 [debug] [MainThread]: Executing "git --help"
+[0m02:40:59.866253 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:40:59.867879 [debug] [MainThread]: STDERR: "b''"
+[0m02:40:59.868921 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:40:59.870378 [info ] [MainThread]: Connection:
+[0m02:40:59.872076 [info ] [MainThread]:   account: oh25185.mexico-central.azure
+[0m02:40:59.873474 [info ] [MainThread]:   user: PC_DBT_USER
+[0m02:40:59.874941 [info ] [MainThread]:   database: PC_DBT_DB
+[0m02:40:59.876424 [info ] [MainThread]:   warehouse: PC_DBT_WH
+[0m02:40:59.877889 [info ] [MainThread]:   role: PC_DBT_ROLE
+[0m02:40:59.879164 [info ] [MainThread]:   schema: DBT_CCARVAJAL
+[0m02:40:59.880650 [info ] [MainThread]:   authenticator: None
+[0m02:40:59.882262 [info ] [MainThread]:   oauth_client_id: None
+[0m02:40:59.884199 [info ] [MainThread]:   query_tag: None
+[0m02:40:59.885555 [info ] [MainThread]:   client_session_keep_alive: False
+[0m02:40:59.886931 [info ] [MainThread]:   host: None
+[0m02:40:59.888217 [info ] [MainThread]:   port: None
+[0m02:40:59.889535 [info ] [MainThread]:   proxy_host: None
+[0m02:40:59.891227 [info ] [MainThread]:   proxy_port: None
+[0m02:40:59.892583 [info ] [MainThread]:   protocol: None
+[0m02:40:59.894149 [info ] [MainThread]:   connect_retries: 1
+[0m02:40:59.895531 [info ] [MainThread]:   connect_timeout: None
+[0m02:40:59.896855 [info ] [MainThread]:   retry_on_database_errors: False
+[0m02:40:59.898121 [info ] [MainThread]:   retry_all: False
+[0m02:40:59.901061 [info ] [MainThread]:   insecure_mode: False
+[0m02:40:59.902904 [info ] [MainThread]:   reuse_connections: True
+[0m02:40:59.905548 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:41:00.108282 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m02:41:00.172729 [debug] [MainThread]: Using snowflake connection "debug"
+[0m02:41:00.174280 [debug] [MainThread]: On debug: select 1 as id
+[0m02:41:00.175727 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:41:00.962151 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.786 seconds
+[0m02:41:00.965067 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m02:41:00.966668 [info ] [MainThread]: [32mAll checks passed![0m
+[0m02:41:00.970584 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.9080801, "process_in_blocks": "0", "process_kernel_time": 0.540601, "process_mem_max_rss": "118528", "process_out_blocks": "24", "process_user_time": 3.744166}
+[0m02:41:00.972178 [debug] [MainThread]: Command `dbt debug` succeeded at 02:41:00.971831 after 1.91 seconds
+[0m02:41:00.973365 [debug] [MainThread]: Connection 'debug' was left open.
+[0m02:41:00.974709 [debug] [MainThread]: On debug: Close
+[0m02:41:01.201939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7c8f46810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7c6260c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7c64485c0>]}
+[0m02:41:01.204336 [debug] [MainThread]: Flushing usage events
+[0m02:41:01.618388 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:41:05.473173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68d0236b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68bca2960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68b455a60>]}
+
+
+============================== 02:41:05.483280 | 1d083062-d540-4fef-b33a-6f186711cc71 ==============================
+[0m02:41:05.483280 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:41:05.485782 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m02:41:06.128996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff689f257c0>]}
+[0m02:41:06.316003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68be5f920>]}
+[0m02:41:06.317217 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:41:06.531188 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m02:41:06.533389 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:41:06.534968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff689ddce60>]}
+[0m02:41:09.398012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff689c54740>]}
+[0m02:41:09.572761 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:41:09.579597 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:41:09.671409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff688908290>]}
+[0m02:41:09.672938 [info ] [MainThread]: Found 1 model, 2 data tests, 5 sources, 474 macros
+[0m02:41:09.679538 [info ] [MainThread]: 
+[0m02:41:09.681397 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:41:09.683206 [info ] [MainThread]: 
+[0m02:41:09.684996 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:41:09.691175 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB'
+[0m02:41:09.817314 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB"
+[0m02:41:09.819495 [debug] [ThreadPool]: On list_PC_DBT_DB: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB"} */
+show terse schemas in database PC_DBT_DB
+    limit 10000
+[0m02:41:09.821218 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:41:10.599976 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.779 seconds
+[0m02:41:10.606956 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_PC_DBT_DB, now create_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL)
+[0m02:41:10.608593 [debug] [ThreadPool]: Creating schema "database: "PC_DBT_DB"
+schema: "DBT_CCARVAJAL_DBT_CCARVAJAL"
+"
+[0m02:41:10.622866 [debug] [ThreadPool]: Using snowflake connection "create_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL"
+[0m02:41:10.624099 [debug] [ThreadPool]: On create_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "create_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL"} */
+create schema if not exists PC_DBT_DB.DBT_CCARVAJAL_DBT_CCARVAJAL
+[0m02:41:10.777573 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.152 seconds
+[0m02:41:10.782950 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL, now list_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL)
+[0m02:41:10.814374 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL"
+[0m02:41:10.815742 [debug] [ThreadPool]: On list_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL"} */
+show objects in PC_DBT_DB.DBT_CCARVAJAL_DBT_CCARVAJAL limit 10000;
+[0m02:41:10.970938 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.154 seconds
+[0m02:41:10.975965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff689b9d160>]}
+[0m02:41:10.983250 [debug] [Thread-1 (]: Began running node model.etl_project.customers
+[0m02:41:10.985219 [info ] [Thread-1 (]: 1 of 3 START sql table model DBT_CCARVAJAL_DBT_CCARVAJAL.customers ............. [RUN]
+[0m02:41:10.986837 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_PC_DBT_DB_DBT_CCARVAJAL_DBT_CCARVAJAL, now model.etl_project.customers)
+[0m02:41:10.988167 [debug] [Thread-1 (]: Began compiling node model.etl_project.customers
+[0m02:41:11.016380 [debug] [Thread-1 (]: Writing injected SQL for node "model.etl_project.customers"
+[0m02:41:11.022395 [debug] [Thread-1 (]: Began executing node model.etl_project.customers
+[0m02:41:11.127502 [debug] [Thread-1 (]: Writing runtime sql for node "model.etl_project.customers"
+[0m02:41:11.135806 [debug] [Thread-1 (]: Using snowflake connection "model.etl_project.customers"
+[0m02:41:11.137400 [debug] [Thread-1 (]: On model.etl_project.customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "node_id": "model.etl_project.customers"} */
+create or replace transient table PC_DBT_DB.DBT_CCARVAJAL_DBT_CCARVAJAL.customers
+         as
+        (
+
+with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS
+),
+
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from PC_DBT_DB.DBT_CCARVAJAL.ORDERS
+),
+
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+),
+
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final
+        );
+[0m02:41:11.289908 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bae34d-0004-c777-0000-00000af992f1
+[0m02:41:11.291504 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+[0m02:41:11.301932 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:41:11.307909 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1d083062-d540-4fef-b33a-6f186711cc71', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68825fc80>]}
+[0m02:41:11.310298 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model DBT_CCARVAJAL_DBT_CCARVAJAL.customers .... [[31mERROR[0m in 0.32s]
+[0m02:41:11.313345 [debug] [Thread-1 (]: Finished running node model.etl_project.customers
+[0m02:41:11.315801 [debug] [Thread-4 (]: Marking all children of 'model.etl_project.customers' to be skipped because of status 'error'.  Reason: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql.
+[0m02:41:11.319935 [debug] [Thread-1 (]: Began running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:41:11.321511 [info ] [Thread-1 (]: 2 of 3 SKIP test not_null_customers_customer_id ................................ [[33mSKIP[0m]
+[0m02:41:11.323404 [debug] [Thread-1 (]: Finished running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:41:11.325023 [debug] [Thread-1 (]: Began running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:41:11.326432 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.not_null_customers_customer_id.5c9bf9911d' to be skipped because of status 'skipped'. 
+[0m02:41:11.328888 [info ] [Thread-1 (]: 3 of 3 SKIP test unique_customers_customer_id .................................. [[33mSKIP[0m]
+[0m02:41:11.331718 [debug] [Thread-1 (]: Finished running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:41:11.333058 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.unique_customers_customer_id.c5af1ff4b1' to be skipped because of status 'skipped'. 
+[0m02:41:11.338319 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:41:11.339747 [debug] [MainThread]: Connection 'model.etl_project.customers' was left open.
+[0m02:41:11.341640 [debug] [MainThread]: On model.etl_project.customers: Close
+[0m02:41:11.567086 [info ] [MainThread]: 
+[0m02:41:11.568728 [info ] [MainThread]: Finished running 1 table model, 2 data tests in 0 hours 0 minutes and 1.88 seconds (1.88s).
+[0m02:41:11.571777 [debug] [MainThread]: Command end result
+[0m02:41:11.647888 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:41:11.652571 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:41:11.669898 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/carizac/ETL-snowflake/etl_project/target/run_results.json
+[0m02:41:11.670930 [info ] [MainThread]: 
+[0m02:41:11.672098 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:41:11.673608 [info ] [MainThread]: 
+[0m02:41:11.674956 [error] [MainThread]:   Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:41:11.676321 [info ] [MainThread]: 
+[0m02:41:11.677794 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m02:41:11.680305 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 6.346445, "process_in_blocks": "40", "process_kernel_time": 0.576825, "process_mem_max_rss": "132644", "process_out_blocks": "2992", "process_user_time": 7.677751}
+[0m02:41:11.681481 [debug] [MainThread]: Command `dbt build` failed at 02:41:11.681238 after 6.35 seconds
+[0m02:41:11.682451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68d16cce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff68bf492e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff688365340>]}
+[0m02:41:11.683326 [debug] [MainThread]: Flushing usage events
+[0m02:41:12.061492 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:58:33.859860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029b0375c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029b889580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029b0376b0>]}
+
+
+============================== 02:58:33.870917 | 1a352a5b-e3d6-40ac-8e8c-81b2d27fdcfc ==============================
+[0m02:58:33.870917 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:58:33.873969 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt clean', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m02:58:34.204866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a352a5b-e3d6-40ac-8e8c-81b2d27fdcfc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029b00e090>]}
+[0m02:58:34.239972 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.6204321, "process_in_blocks": "0", "process_kernel_time": 0.349233, "process_mem_max_rss": "89748", "process_out_blocks": "8", "process_user_time": 3.252859}
+[0m02:58:34.241777 [debug] [MainThread]: Command `dbt clean` succeeded at 02:58:34.241223 after 0.62 seconds
+[0m02:58:34.243314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029ba3aa20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029af4a090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029b0375c0>]}
+[0m02:58:34.245177 [debug] [MainThread]: Flushing usage events
+[0m02:58:34.682593 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:58:38.141011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aebe457f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aeb28f380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aeb72d6a0>]}
+
+
+============================== 02:58:38.145641 | 5a77683a-2a36-4105-a85c-8c963a846dc2 ==============================
+[0m02:58:38.145641 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:58:38.146548 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/carizac/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:58:38.420105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5a77683a-2a36-4105-a85c-8c963a846dc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aeb215a90>]}
+[0m02:58:38.440850 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:58:38.442778 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m02:58:38.445131 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.41811207, "process_in_blocks": "0", "process_kernel_time": 0.279717, "process_mem_max_rss": "90048", "process_out_blocks": "8", "process_user_time": 3.036927}
+[0m02:58:38.446104 [debug] [MainThread]: Command `dbt deps` succeeded at 02:58:38.445875 after 0.42 seconds
+[0m02:58:38.447534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aeb551880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aeb1d19a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3aebd02180>]}
+[0m02:58:38.449860 [debug] [MainThread]: Flushing usage events
+[0m02:58:38.832885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:58:42.185961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a9b21670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20ac9d93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20aba56540>]}
+
+
+============================== 02:58:42.196175 | 73cd53bf-0b0d-45ec-b406-d9a926ee0e7d ==============================
+[0m02:58:42.196175 [info ] [MainThread]: Running with dbt=1.9.3
+[0m02:58:42.198044 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/carizac/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/carizac/ETL-snowflake/etl_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt build', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m02:58:42.896158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a84b2f30>]}
+[0m02:58:43.026812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a8875a30>]}
+[0m02:58:43.029397 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m02:58:43.257725 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m02:58:43.259710 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:58:43.260839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a832ea20>]}
+[0m02:58:46.344508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a829cc80>]}
+[0m02:58:46.533340 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:58:46.537770 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:58:46.608606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a802d580>]}
+[0m02:58:46.609611 [info ] [MainThread]: Found 1 model, 2 data tests, 5 sources, 474 macros
+[0m02:58:46.614637 [info ] [MainThread]: 
+[0m02:58:46.615674 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:58:46.616724 [info ] [MainThread]: 
+[0m02:58:46.617982 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m02:58:46.620631 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PC_DBT_DB'
+[0m02:58:46.729869 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB"
+[0m02:58:46.730844 [debug] [ThreadPool]: On list_PC_DBT_DB: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB"} */
+show terse schemas in database PC_DBT_DB
+    limit 10000
+[0m02:58:46.731600 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:58:47.556939 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.825 seconds
+[0m02:58:47.563751 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_PC_DBT_DB, now list_PC_DBT_DB_DBT_CCARVAJAL)
+[0m02:58:47.594918 [debug] [ThreadPool]: Using snowflake connection "list_PC_DBT_DB_DBT_CCARVAJAL"
+[0m02:58:47.596177 [debug] [ThreadPool]: On list_PC_DBT_DB_DBT_CCARVAJAL: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "connection_name": "list_PC_DBT_DB_DBT_CCARVAJAL"} */
+show objects in PC_DBT_DB.DBT_CCARVAJAL limit 10000;
+[0m02:58:47.768521 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.171 seconds
+[0m02:58:47.775136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a802d580>]}
+[0m02:58:47.782337 [debug] [Thread-1 (]: Began running node model.etl_project.customers
+[0m02:58:47.784790 [info ] [Thread-1 (]: 1 of 3 START sql table model DBT_CCARVAJAL.customers ........................... [RUN]
+[0m02:58:47.786607 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_PC_DBT_DB_DBT_CCARVAJAL, now model.etl_project.customers)
+[0m02:58:47.788069 [debug] [Thread-1 (]: Began compiling node model.etl_project.customers
+[0m02:58:47.816859 [debug] [Thread-1 (]: Writing injected SQL for node "model.etl_project.customers"
+[0m02:58:47.825872 [debug] [Thread-1 (]: Began executing node model.etl_project.customers
+[0m02:58:47.921701 [debug] [Thread-1 (]: Writing runtime sql for node "model.etl_project.customers"
+[0m02:58:47.927018 [debug] [Thread-1 (]: Using snowflake connection "model.etl_project.customers"
+[0m02:58:47.928054 [debug] [Thread-1 (]: On model.etl_project.customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "etl_project", "target_name": "dev", "node_id": "model.etl_project.customers"} */
+create or replace transient table PC_DBT_DB.DBT_CCARVAJAL.customers
+         as
+        (
+
+with customers as (
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS
+),
+
+orders as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from PC_DBT_DB.DBT_CCARVAJAL.ORDERS
+),
+
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+),
+
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+
+select * from final
+        );
+[0m02:58:48.082053 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bae35e-0004-c780-0000-00000af98375
+[0m02:58:48.083809 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+[0m02:58:48.095473 [debug] [Thread-1 (]: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:58:48.102496 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73cd53bf-0b0d-45ec-b406-d9a926ee0e7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a8489220>]}
+[0m02:58:48.105864 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model DBT_CCARVAJAL.customers .................. [[31mERROR[0m in 0.31s]
+[0m02:58:48.109499 [debug] [Thread-1 (]: Finished running node model.etl_project.customers
+[0m02:58:48.112216 [debug] [Thread-4 (]: Marking all children of 'model.etl_project.customers' to be skipped because of status 'error'.  Reason: Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql.
+[0m02:58:48.118872 [debug] [Thread-1 (]: Began running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:58:48.121157 [info ] [Thread-1 (]: 2 of 3 SKIP test not_null_customers_customer_id ................................ [[33mSKIP[0m]
+[0m02:58:48.123567 [debug] [Thread-1 (]: Finished running node test.etl_project.not_null_customers_customer_id.5c9bf9911d
+[0m02:58:48.126268 [debug] [Thread-1 (]: Began running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:58:48.128084 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.not_null_customers_customer_id.5c9bf9911d' to be skipped because of status 'skipped'. 
+[0m02:58:48.129555 [info ] [Thread-1 (]: 3 of 3 SKIP test unique_customers_customer_id .................................. [[33mSKIP[0m]
+[0m02:58:48.132073 [debug] [Thread-1 (]: Finished running node test.etl_project.unique_customers_customer_id.c5af1ff4b1
+[0m02:58:48.133996 [debug] [Thread-4 (]: Marking all children of 'test.etl_project.unique_customers_customer_id.c5af1ff4b1' to be skipped because of status 'skipped'. 
+[0m02:58:48.139054 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:58:48.140805 [debug] [MainThread]: Connection 'model.etl_project.customers' was left open.
+[0m02:58:48.143521 [debug] [MainThread]: On model.etl_project.customers: Close
+[0m02:58:48.377517 [info ] [MainThread]: 
+[0m02:58:48.378945 [info ] [MainThread]: Finished running 1 table model, 2 data tests in 0 hours 0 minutes and 1.76 seconds (1.76s).
+[0m02:58:48.382079 [debug] [MainThread]: Command end result
+[0m02:58:48.451047 [debug] [MainThread]: Wrote artifact WritableManifest to /home/carizac/ETL-snowflake/etl_project/target/manifest.json
+[0m02:58:48.456477 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/carizac/ETL-snowflake/etl_project/target/semantic_manifest.json
+[0m02:58:48.472704 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/carizac/ETL-snowflake/etl_project/target/run_results.json
+[0m02:58:48.473965 [info ] [MainThread]: 
+[0m02:58:48.475397 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m02:58:48.476881 [info ] [MainThread]: 
+[0m02:58:48.478401 [error] [MainThread]:   Database Error in model customers (models/customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'PC_DBT_DB.DBT_CCARVAJAL.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/etl_project/models/customers.sql
+[0m02:58:48.479658 [info ] [MainThread]: 
+[0m02:58:48.481082 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 TOTAL=3
+[0m02:58:48.483831 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 6.549605, "process_in_blocks": "24", "process_kernel_time": 0.601067, "process_mem_max_rss": "132636", "process_out_blocks": "2992", "process_user_time": 7.42318}
+[0m02:58:48.485387 [debug] [MainThread]: Command `dbt build` failed at 02:58:48.485012 after 6.55 seconds
+[0m02:58:48.486940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a9b96840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20aa13ef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a84542c0>]}
+[0m02:58:48.488644 [debug] [MainThread]: Flushing usage events
+[0m02:58:48.875800 [debug] [MainThread]: An error was encountered while trying to flush usage events

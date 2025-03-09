@@ -26,7 +26,7 @@ customer_orders AS (
 final AS (
   SELECT
     cs.customer_id,
-    customer_name,
+    cs.customer_name,
     co.first_order_date,
     co.most_recent_order_date,
     COALESCE(co.number_of_orders, 0) AS number_of_orders
@@ -34,4 +34,4 @@ final AS (
   LEFT JOIN customer_orders AS co ON cs.customer_id = co.customer_id
 )
 
-SELECT * FROM final
+SELECT * FROM final;

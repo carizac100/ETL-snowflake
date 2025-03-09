@@ -1,0 +1,21 @@
+name: 'etl_project'
+version: '1.0.0'
+profile: 'etl_project'
+config-version: 2
+
+# Rutas de directorios para dbt
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuración de modelos
+models:
+  etl_project:          # Aplica a todos los modelos en la carpeta `models/etl_project/` si la tuvieras
+    +materialized: table

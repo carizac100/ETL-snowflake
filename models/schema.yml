@@ -1,9 +1,19 @@
-version: 2
+version: 2  # Indica que este formato sigue las convenciones de dbt v0.17.0 o superior
 
 sources:
-  - name: jaffle_shop
-    database: RAW
-    schema: JAFFLE_SHOP
+  - name: jaffle_shop  # Nombre de la fuente (base de datos en bruto)
+    database: RAW      # Nombre de la base de datos en Snowflake
+    schema: JAFFLE_SHOP  # Esquema en Snowflake donde están las tablas
     tables:
-      - name: customers
+      - name: customers  # Definición de la tabla
       - name: orders
+
+models:
+  - name: customers  # Nombre del modelo en dbt
+    description: "Tabla transformada de clientes"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+

@@ -3,11 +3,11 @@ version: 2
 # 🔹 Fuentes (Sources): Definen las tablas en RAW.JAFFLE_SHOP
 sources:
   - name: jaffle_shop
-    database: RAW  # ✅ Ajusta al nombre correcto en Snowflake
-    schema: JAFFLE_SHOP  # ✅ Coincide con lo que ves en Snowflake
+    database: raw  # ✅ Ajusta al nombre correcto en Snowflake
+    schema: jaffle_shop  # ✅ Coincide con lo que ves en Snowflake
     tables:
-      - name: CUSTOMERS  # ✅ Usa mayúsculas si Snowflake usa mayúsculas
-      - name: ORDERS
+      - name: customers  # ✅ Usa mayúsculas si Snowflake usa mayúsculas
+      - name: orders
 
 # 🔹 Modelos en dbt (Transformaciones en `models/`)
 models:

@@ -1,27 +1,10 @@
-<<<<<<< HEAD
 version: 2
 
 sources:
-  - name: jaffle_shop 
-    database: raw  
-    schema: jaffle_shop  
+  - name: jaffle_shop  # Manteniendo el nombre en minúsculas para consistencia
+    database: raw  # Manteniendo minúsculas como en la versión original
+    schema: jaffle_shop
     tables:
-<<<<<<< HEAD
-      - name: customers 
-      - name: orders 
-=======
-      - name: CUSTOMERS
-      - name: ORDERS
-=======
-version: 2
-
-sources:
-  - name: JAFFLE_SHOP          # Debe coincidir con {{ source('JAFFLE_SHOP', 'ORDERS') }}
-    database: PC_DBT_DB        # Ajustar a tu base de datos en Snowflake
-    schema: DBT_CCARVAJAL      # Ajustar a tu esquema en Snowflake
-    tables:
-      - name: ORDERS
-      - name: CUSTOMERS
-      - name: PAYMENTS
->>>>>>> c61d6e5 (Actualizando cambios en dbt)
->>>>>>> 8a259a0 (Actualizando cambios en dbt)
+      - name: CUSTOMERS  # Manteniendo en mayúsculas para coherencia con la versión más reciente
+      - name: ORDERS  # Incluyendo este que estaba en ambas versiones
+      - name: PAYMENTS  # Manteniendo este que estaba en la versión más reciente

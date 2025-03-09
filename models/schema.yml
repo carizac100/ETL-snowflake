@@ -1,19 +1,34 @@
 version: 2  # Indica que este formato sigue las convenciones de dbt v0.17.0 o superior
 
 sources:
-  - name: jaffle_shop  # Nombre de la fuente (base de datos en bruto)
-    database: RAW      # Nombre de la base de datos en Snowflake
-    schema: JAFFLE_SHOP  # Esquema en Snowflake donde están las tablas
+  - name: jaffle_shop  # Nombre de la fuente en dbt
+    database: RAW  # Nombre exacto de la base de datos en Snowflake
+    schema: JAFFLE_SHOP  # Nombre exacto del esquema en Snowflake
     tables:
-      - name: customers  # Definición de la tabla
-      - name: orders
+      - name: CUSTOMERS  # Asegúrate de que el nombre coincida con Snowflake
+      - name: ORDERS
 
 models:
-  - name: customers  # Nombre del modelo en dbt
+  - name: customers
     description: "Tabla transformada de clientes"
     columns:
       - name: customer_id
+        description: "Identificador único del cliente"
         tests:
           - unique
           - not_null
 
+      - name: first_order_date
+        description: "Fecha de la primera orden del cliente"
+        tests:
+          - not_null
+
+      - name: most_recent_order_date
+        description: "Fecha de la orden más reciente del cliente"
+        tests:
+          - not_null
+
+      - name: number_of_orders
+        description: "Número total de órdenes por cliente"
+        tests:
+          - not_null

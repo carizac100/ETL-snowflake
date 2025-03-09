@@ -1,13 +1,12 @@
 version: 2
 
 sources:
-  - name: jaffle_shop
-    database: RAW  
-    schema: JAFFLE_SHOP  
+  - name: jaffle_shop  # El nombre de la fuente debe coincidir con el modelo
+    database: RAW
+    schema: JAFFLE_SHOP
     tables:
-      - name: customers  
+      - name: customers
       - name: orders
-
 
 models:
   - name: customers

@@ -3,8 +3,7 @@
 WITH customers_src AS (
   SELECT
     id AS customer_id,
-    first_name,
-    last_name
+    name AS customer_name
   FROM {{ source('JAFFLE_SHOP', 'CUSTOMERS') }}
 ),
 orders_src AS (
@@ -27,8 +26,7 @@ customer_orders AS (
 final AS (
   SELECT
     cs.customer_id,
-    cs.first_name,
-    cs.last_name,
+    customer_name,
     co.first_order_date,
     co.most_recent_order_date,
     COALESCE(co.number_of_orders, 0) AS number_of_orders

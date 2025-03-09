@@ -1,9 +1,17 @@
 version: 2
 
-sources:
-  - name: JAFFLE_SHOP
-    database: RAW
-    schema: JAFFLE_SHOP
-    tables:
-      - name: CUSTOMERS
-      - name: ORDERS
+models:
+  - name: customers
+    description: "Tabla transformada de clientes basada en jaffle_shop.customers."
+    columns:
+      - name: customer_id
+        description: "Clave primaria de los clientes."
+        tests:
+          - unique
+          - not_null
+      - name: first_order_date
+        description: "Fecha de la primera orden del cliente."
+      - name: most_recent_order_date
+        description: "Fecha de la última orden del cliente."
+      - name: number_of_orders
+        description: "Número total de órdenes del cliente."

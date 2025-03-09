@@ -1,15 +1,5 @@
 version: 2
 
-# Definición de las fuentes
-sources:
-  - name: jaffle_shop               # nombre lógico de la fuente
-    database: RAW                   # base de datos real donde están tus tablas
-    schema: JAFFLE_SHOP             # esquema real
-    tables:
-      - name: customers
-      - name: orders
-
-# Definición de los modelos (documentación y tests)
 models:
   - name: customers
     description: "Tabla transformada de clientes basada en jaffle_shop.customers."

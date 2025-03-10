@@ -2,16 +2,33 @@ version: 2
 
 models:
   - name: customers
-    description: "Tabla transformada de clientes basada en jaffle_shop.customers."
     columns:
       - name: customer_id
-        description: "Clave primaria de los clientes."
+        tests:
+          - unique  # 📌 Cada ID de cliente debe ser único
+          - not_null  # 📌 Ningún cliente debe tener un ID vacío
+
+  - name: stg_customers
+    columns:
+      - name: customer_id
         tests:
           - unique
           - not_null
-      - name: first_order_date
-        description: "Fecha de la primera orden del cliente."
-      - name: most_recent_order_date
-        description: "Fecha de la última orden del cliente."
-      - name: number_of_orders
-        description: "Número total de órdenes del cliente."
+
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique  # 📌 Cada orden debe tener un ID único
+          - not_null  # 📌 Ninguna orden debe tener un ID vacío
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+              # 📌 Valida que `status` solo tenga estos valores permitidos
+      - name: customer_id
+        tests:
+          - not_null  # 📌 Cada orden debe estar asociada a un cliente
+          - relationships:
+              to: ref('stg_customers')  # 📌 Valida que cada `customer_id` exista en `stg_customers`
+              field: customer_id

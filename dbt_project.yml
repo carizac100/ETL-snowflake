@@ -22,5 +22,4 @@ clean-targets:
 models:
   jaffle_shop:
     +materialized: table  # Todo en 'jaffle_shop' será materializado como tabla
-    example:
-      +materialized: view  # Todo en 'example' será materializado como vista
+

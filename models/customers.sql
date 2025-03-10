@@ -2,8 +2,9 @@
 
 WITH customers_src AS (
   SELECT
-    id AS customer_id,
-    name AS customer_name
+        id AS customer_id,
+        first_name,
+        last_name
   FROM {{ source('JAFFLE_SHOP', 'CUSTOMERS') }}
 ),
 orders_src AS (

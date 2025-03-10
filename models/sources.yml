@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: jaffle_shop  # 🔹 Cambiado a minúsculas
-    database: raw  # 🔹 Cambiado a minúsculas
-    schema: jaffle_shop  # 🔹 Cambiado a minúsculas
+  - name: jaffle_shop 
+    database: raw  
+    schema: jaffle_shop  
     tables:
-      - name: customers  # 🔹 Cambiado a minúsculas
-      - name: orders  # 🔹 Cambiado a minúsculas
+      - name: customers 
+      - name: orders 

@@ -3,4 +3,4 @@ SELECT
     user_id AS customer_id,
     order_date,
     status
-FROM raw.jaffle_shop.orders;
+FROM raw.jaffle_shop.orders

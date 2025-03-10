@@ -1,9 +1,9 @@
-# Nombre de tu proyecto
-name: 'etl_project'
+# Nombre del proyecto
+name: 'jaffle_shop'
 version: '1.0.0'
 
 # Perfil de dbt, asegúrate de que coincida con ~/.dbt/profiles.yml
-profile: 'etl_project'
+profile: 'jaffle_shop'
 
 # Configuración de rutas para dbt
 model-paths: ["models"]
@@ -20,8 +20,7 @@ clean-targets:
 
 # Configuración de modelos en dbt
 models:
-  etl_project:  # Aplica a todos los modelos en el proyecto
-    +materialized: table  # Materialización por defecto en tabla
-    customers:
-      +materialized: table  # Materialización específica para customers
-
+  jaffle_shop:
+    +materialized: table  # Todo en 'jaffle_shop' será materializado como tabla
+    example:
+      +materialized: view  # Todo en 'example' será materializado como vista

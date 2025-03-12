@@ -1,9 +1,9 @@
 # Nombre del proyecto
-name: 'jaffle_shop'
+name: 'etl_project'
 version: '1.0.0'
 
 # Perfil de dbt, asegúrate de que coincida con ~/.dbt/profiles.yml
-profile: 'jaffle_shop'
+profile: 'etl_project'
 
 # Configuración de rutas
 model-paths: ["models"]

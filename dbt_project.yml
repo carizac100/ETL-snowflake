@@ -3,7 +3,7 @@ name: 'jaffle_shop'
 version: '1.0.0'
 
 # Perfil de dbt, asegúrate de que coincida con ~/.dbt/profiles.yml
-profile: 'etl_project'
+profile: 'jaffle_shop'
 
 # Configuración de rutas
 model-paths: ["models"]

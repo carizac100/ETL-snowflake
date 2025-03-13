@@ -1,0 +1,34 @@
+# Nombre del proyecto
+name: 'etl_project'
+version: '1.0.0'
+
+# Perfil de dbt, asegúrate de que coincida con ~/.dbt/profiles.yml
+profile: 'etl_project'
+
+# Configuración de rutas
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Directorios que se limpiarán con `dbt clean`
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuración de modelos en dbt
+models:
+  jaffle_shop:
+    +schema: "{{ target.schema }}"  # Usa el esquema según el entorno (DEV, QA, PROD)
+    
+    # Configuración dinámica de materialización según el entorno
+    +materialized: "{{ 'view' if target.name == 'Development' else 'incremental' if target.name == 'QA' else 'table' }}"
+    
+    # Opcional: Configurar unique_key para modelos incrementales
+    orders:
+      +unique_key: "order_id"
+
+    customers:
+      +unique_key: "customer_id"

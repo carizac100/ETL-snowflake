@@ -1,34 +1,39 @@
-# Nombre del proyecto
-name: 'etl_project'
-version: '1.0.0'
+etl_project:
+  target: dev  
 
-# Perfil de dbt, asegúrate de que coincida con ~/.dbt/profiles.yml
-profile: 'etl_project'
+  outputs:
+    dev:
+      type: snowflake
+      account: "oh25185.mexico-central.azure"
+      user: "PC_DBT_USER"
+      password: "BKQ37KmFBaHes5S"
+      role: "PC_DBT_ROLE"
+      database: "ANALYTICS"
+      warehouse: "PC_DBT_WH"
+      schema: "ANALYTICS_DEV"
+      threads: 4
+      client_session_keep_alive: False
 
-# Configuración de rutas
-model-paths: ["models"]
-analysis-paths: ["analyses"]
-test-paths: ["tests"]
-seed-paths: ["seeds"]
-macro-paths: ["macros"]
-snapshot-paths: ["snapshots"]
+    qa:
+      type: snowflake
+      account: "oh25185.mexico-central.azure"
+      user: "PC_DBT_USER"
+      password: "BKQ37KmFBaHes5S"
+      role: "PC_DBT_ROLE"
+      database: "ANALYTICS"
+      warehouse: "PC_DBT_WH"
+      schema: "ANALYTICS_QA"
+      threads: 4
+      client_session_keep_alive: False
 
-# Directorios que se limpiarán con `dbt clean`
-clean-targets:
-  - "target"
-  - "dbt_packages"
-
-# Configuración de modelos en dbt
-models:
-  jaffle_shop:
-    +schema: "{{ target.schema }}"  # Usa el esquema según el entorno (DEV, QA, PROD)
-    
-    # Configuración dinámica de materialización según el entorno
-    +materialized: "{{ 'view' if target.name == 'Development' else 'incremental' if target.name == 'QA' else 'table' }}"
-    
-    # Opcional: Configurar unique_key para modelos incrementales
-    orders:
-      +unique_key: "order_id"
-
-    customers:
-      +unique_key: "customer_id"
+    prod:
+      type: snowflake
+      account: "oh25185.mexico-central.azure"
+      user: "PC_DBT_USER"
+      password: "BKQ37KmFBaHes5S"
+      role: "PC_DBT_ROLE"
+      database: "ANALYTICS"
+      warehouse: "PC_DBT_WH"
+      schema: "ANALYTICS_PROD"
+      threads: 4
+      client_session_keep_alive: False

@@ -1,9 +1,10 @@
 version: 2
 
 sources:
-  - name: jaffle_shop 
-    database: raw  
-    schema: jaffle_shop  
+  - name: jaffle_shop  # Manteniendo el nombre en minúsculas para consistencia
+    database: raw  # Manteniendo minúsculas como en la versión original
+    schema: jaffle_shop
     tables:
-      - name: customers 
-      - name: orders 
+      - name: CUSTOMERS  # Manteniendo en mayúsculas para coherencia con la versión más reciente
+      - name: ORDERS  # Incluyendo este que estaba en ambas versiones
+      - name: PAYMENTS  # Manteniendo este que estaba en la versión más reciente

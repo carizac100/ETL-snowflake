@@ -1,0 +1,39 @@
+etl_project:
+  target: dev  
+
+  outputs:
+    dev:
+      type: snowflake
+      account: "oh25185.mexico-central.azure"
+      user: "PC_DBT_USER"
+      password: "BKQ37KmFBaHes5S"
+      role: "PC_DBT_ROLE"
+      database: "ANALYTICS"
+      warehouse: "PC_DBT_WH"
+      schema: "ANALYTICS_DEV"
+      threads: 4
+      client_session_keep_alive: False
+
+    qa:
+      type: snowflake
+      account: "oh25185.mexico-central.azure"
+      user: "PC_DBT_USER"
+      password: "BKQ37KmFBaHes5S"
+      role: "PC_DBT_ROLE"
+      database: "ANALYTICS"
+      warehouse: "PC_DBT_WH"
+      schema: "ANALYTICS_QA"
+      threads: 4
+      client_session_keep_alive: False
+
+    prod:
+      type: snowflake
+      account: "oh25185.mexico-central.azure"
+      user: "PC_DBT_USER"
+      password: "BKQ37KmFBaHes5S"
+      role: "PC_DBT_ROLE"
+      database: "ANALYTICS"
+      warehouse: "PC_DBT_WH"
+      schema: "ANALYTICS_PROD"
+      threads: 4
+      client_session_keep_alive: False

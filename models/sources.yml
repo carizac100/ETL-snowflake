@@ -1,9 +1,11 @@
+version: 2
 sources:
   - name: jaffle_shop
-    database: RAW       
-    schema: JAFFLE_SHOP 
+    database: RAW            
+    schema: JAFFLE_SHOP      
     tables:
-      - name: ORDERS
-      - name: CUSTOMERS
-      - name: PAYMENTS
+      - name: orders        
+      - name: customers
+      - name: payments
+
 
